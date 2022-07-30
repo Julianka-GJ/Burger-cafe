@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Burger_cafe</title>
+</head>
+<body>
+    <div class="main-box" id="main-box">
+        <form class="burger-menu" id="form-menu">
+            <label for="burger-small">
+                <input type="radio" id="burger-small" value="BURGER SMALL-LIGHT" name="menu" price="50" kcal="20">
+                BURGER SMALL-LIGHT
+            </label>
+            <label for="burger-medium">
+                <input type="radio" id="burger-medium" value="BURGER MEDIUM-CLASSICAL" name="menu">
+                BURGER MEDIUM-CLASSICAL
+            </label>
+            <label for="burger-large">
+                <input type="radio" id="burger-large" value="BURGER LARGE-ROYAL" name="menu">
+                BURGER LARGE-ROYAL
+            </label>
+        </form>
+        <button id="button" type="submit">Want burger</button>
+    </div>
+    <div class="hidden main-box menu-toppings" id="menu-toppings">
+        <p class="menu-toppings-title" id="print-block"></p>
+        <h2>Add toppings:</h2>
+        <form id="toppings-menu" class="toppings-box">
+            <label for="cheese">
+                <input type="checkbox" id="cheese" value="cheese" name="toppings">
+                Cheese
+            </label>
+            <label for="salad">
+                <input type="checkbox" id="salad" value="salad" name="toppings">
+                Salad
+            </label>
+            <label for="mayonnaise">
+                <input type="checkbox" id="mayonnaise" value="mayonnaise" name="toppings">
+                Mayonnaise
+            </label>
+            <label for="potato">
+                <input type="checkbox" id="potato" value="potato" name="toppings">
+                Potato
+            </label>
+        </form>
+        <button id="button-add" type="submit">Add toppings</button>
+        <span id="list-toppings"></span>
+        </div>
+    </div>
+    <div class="hidden main-box">
+        <span id="price"></span>
+    </div>
+</body>
+</html>
